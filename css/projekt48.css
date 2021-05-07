@@ -1,0 +1,44 @@
+
+#div-container{
+    width: auto;
+    margin-top: 10px;
+    margin-left: 50px;
+    /*margin-left: 100px;*/
+    display: flex;
+    
+    /*text-align: center;*/
+}
+
+.div-shadow{
+    
+    width: 30px;
+    height: 100px;
+    margin: 1px 1px 1px 1px;
+    border: 1px;
+    background-color:cyan;
+    border-color: black;
+}
+
+#p_sum{
+    
+}
+
+.place{
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 0px;
+    border: 0px;
+    position: absolute;
+}
+#sum{
+    width: 0px;
+    height: 20px;
+    
+    margin-bottom: 60px;
+    margin-left: 50px;
+    background-color: coral;
+    /*position: absolute;*/
+}
+

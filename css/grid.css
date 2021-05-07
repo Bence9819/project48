@@ -1,0 +1,61 @@
+.container{
+    display:grid;
+    height:100vh;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "footer footer footer footer";
+    grid-gap: 0.2rem;
+}
+
+nav{
+    background: rgb(226, 231, 231);
+    grid-area: nav;
+}
+main{
+    background: rgb(133, 133, 134);
+    grid-area: main;
+}
+#sidebar{
+    background: rgb(119, 105, 100);
+    grid-area: sidebar;
+}
+
+#content1{
+    background:rgb(51, 51, 51) ;
+    grid-area: content1;
+}
+
+#content2{
+    background: rgb(56, 59, 56);
+    grid-area: content2;
+}
+
+#content3{
+    background: rgb(25, 25, 27) ;
+    grid-area: content3;
+}
+
+footer{
+    background: burlywood;
+    grid-area: footer;
+}
+
+@media only screen and (max-width:550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 10fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
+
+}
