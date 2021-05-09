@@ -12,7 +12,7 @@ function getRandomArbitrary(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-document.getElementById('random').onclick = function() {
+document.getElementById('random1').onclick = function() {
     //var myArray = [];
     //var arrayMax = 40;
     var limit = arrayMax + 1;
