@@ -55,7 +55,7 @@ document.getElementById('bubble').onclick = function bubble() {
 /*
 ------------------------------------------------------------------------------------<Insertion>------------------------------------------------------------------------------------
 */
-
+/*
 document.getElementById('insertion').onclick = function insertion() {
     async function printInsertion()  {
         const div_shadow = document.querySelectorAll(".div-shadow");
@@ -77,11 +77,12 @@ document.getElementById('insertion').onclick = function insertion() {
     }
     printInsertion();
 }
-
+*/
 
 /*
 ------------------------------------------------------------------------------------<Merge>------------------------------------------------------------------------------------
 */
+/*
 document.getElementById('insertion').onclick = function insertion() {
     async function printMerge()  {
         
@@ -89,3 +90,4 @@ document.getElementById('insertion').onclick = function insertion() {
     printMerge();
 }
 
+*/

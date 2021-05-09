@@ -21,7 +21,7 @@ document.getElementById('random').onclick = function() {
 
         currentItemReference=AddNewDivs();
 
-        // igy tudsz hozzaadni bmilyen attributumot
+        
         currentItemReference.setAttribute('id', '_id_' + i);
         currentItemReference.setAttribute('data-tmp', 'this is the ' + i + '. element');
 
@@ -41,6 +41,7 @@ document.getElementById('random').onclick = function() {
 
 
 }
+/*
 document.getElementById('swap').onclick = function swap() {
 
     const fakeImages = document.querySelectorAll(".div-shadow");
@@ -66,7 +67,7 @@ document.getElementById('swap').onclick = function swap() {
 
 
 }
-
+*/
 
 
 /*
