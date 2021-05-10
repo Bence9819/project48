@@ -1,0 +1,2 @@
+pwd -----> \valami\valahol
+/cygdrive/c/Users/bence/Downloads/php-8.0.6-Win32-vs16-x64/php.exe

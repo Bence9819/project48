@@ -56,27 +56,52 @@ document.getElementById('random1').onclick = function() {
         
         
         async function printy()  {
-            
+
+                            document.getElementById('line_0').style.backgroundColor = 'coral';
+                            await delay(500);
+                            document.getElementById('line_0').style.backgroundColor = '#292b2c';
+
+                            document.getElementById('line_1').style.backgroundColor = 'coral';
+                            await delay(500);
+                            document.getElementById('line_1').style.backgroundColor = '#292b2c';
+
             for (var i = 0; i < div_shadow.length; i++) {
+
+                            document.getElementById('line_2').style.backgroundColor = 'coral';
+                            await delay(500);
+                            document.getElementById('line_2').style.backgroundColor = '#292b2c';
+
                 summa +=  parseInt(div_shadow[i].style.height);
-                document.getElementById('line_1').style.backgroundColor = 'coral';
+
+                            document.getElementById('line_3').style.backgroundColor = 'coral';
+                            await delay(500);
+                            document.getElementById('line_3').style.backgroundColor = '#292b2c';
+
+                            document.getElementById('line_1').style.backgroundColor = 'coral';
+                            await delay(500);
+                            document.getElementById('line_1').style.backgroundColor = '#292b2c';
                 
                     document.getElementById('_id_'+i).style.backgroundColor = 'coral';
-                    document.getElementById('sum').style.width = (summa/2) +'px';
+                    document.getElementById('sum').style.width = (summa/4) +'px';
                     
                     document.getElementById('line_1').innerHTML = ('Összeg = ' + summa);
                     document.getElementById('p_sum').innerHTML = (summa);
             
-            
+
                     console.log(summa);
                     await delay(500);
                     document.getElementById('_id_'+i).style.backgroundColor = 'cyan';
-                
+                        document.getElementById('line_4').style.backgroundColor = 'coral';
+                        await delay(500);
+                        document.getElementById('line_4').style.backgroundColor = '#292b2c';
                
                 
                 //document.getElementById('line_'+i).innerHTML = '(summa)';
                
-            }//console.log(summa);
+            }           
+            document.getElementById('line_5').style.backgroundColor = 'coral';
+            await delay(500);
+            document.getElementById('line_5').style.backgroundColor = '#292b2c';
         }
         printy();
     }

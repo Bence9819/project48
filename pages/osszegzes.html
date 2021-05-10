@@ -26,7 +26,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="\index.html">Project 48</a>
+      <a class="navbar-brand" href="../index.html">Project 48</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -136,16 +136,46 @@
         <div id="line_4">Ciklus vége</div>
         <div id="line_5">Eljárás vége</div>
       </div>
-
+      <h4 class="font-italic">
+        Included content <small>(.\text\test.txt)</small>
+      </h4>
     </div>
   </div>
+  <div class="jumbotron text-white rounded bg-dark">
+    <p>Feladat: Adott egy N elemből álló sorozat (A), adjuk meg az elemek összegét.</p>
 
+    <p>Megoldás: A számolás előtt az összeg=0. Az összegzés ciklikusan történik úgy, hogy sorra vesszük a sorozat elemeit és hozzáadjuk az addigi összeghez. (összeg:=összeg+a[i], ahol i az elem sorszáma a sorozatban, a pedig maga a sorozat) A következő elemre lépés i értékének növelésével történik, a ciklus i-edik lefutásakor az összeg mindig a sorozat első i elemének összegét jelenti. (Pl.: 3. lefutáskor az első 3 elem összege)</p>
+
+    <p>Példa: A sorozat (A): 5, 4, 2, 7</p>
+
+    <p>Az összeg kezdetben: 0</p>
+    <p>Elemszám (N): 4</p>
+
+    <p>Ciklus I:=1-től 4-ig</p>
+    <p>összeg:=összeg+A[i];</p>
+    <p>Ciklus vége</p>
+
+    <p>A ciklus első végrehajtásakor:</p>
+    <p>i=1,  A[1]=5</p>
+    <p>összeg:=összeg+A[i]  összeg:=0+5  összeg=5</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
 </div>
 
+
 <footer class="footer py-15 bg-dark">
-  <div class="container py-5 text-white">
-    <h5>Footer</h5>
-  </div>
+  <h4 class="font-italic">
+    Included content <small>(.\text\test.txt)</small>
+  </h4>
+  <object width="100%" height="300px" data="../text/test.txt"></object>
+
 </footer>
     
 

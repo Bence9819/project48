@@ -1,0 +1,30 @@
+Feladat: Adott egy N elemből álló sorozat (A), adjuk meg az elemek összegét.
+
+Megoldás: A számolás előtt az összeg=0. Az összegzés ciklikusan történik úgy, hogy sorra vesszük a sorozat elemeit és hozzáadjuk az addigi összeghez. (összeg:=összeg+a[i], ahol i az elem sorszáma a sorozatban, a pedig maga a sorozat) A következő elemre lépés i értékének növelésével történik, a ciklus i-edik lefutásakor az összeg mindig a sorozat első i elemének összegét jelenti. (Pl.: 3. lefutáskor az első 3 elem összege)
+
+Példa: A sorozat (A): 5, 4, 2, 7
+
+Az összeg kezdetben: 0
+Elemszám (N): 4
+
+Ciklus I:=1-től 4-ig
+összeg:=összeg+A[i];
+Ciklus vége
+
+A ciklus első végrehajtásakor:
+i=1,  A[1]=5
+összeg:=összeg+A[i]  összeg:=0+5  összeg=5
+
+A ciklus második végrehajtásakor:
+i=2,  A[2]=4
+összeg:=összeg+A[i]  összeg:=5+4  összeg=9
+
+A ciklus harmadik végrehajtásakor:
+i=3,  A[3]=2
+összeg:=összeg+A[i]  összeg:=9+2  összeg=11
+
+A ciklus negyedik végrehajtásakor:
+i=4,  A[4]=7
+összeg:=összeg+A[i]  összeg:=11+7  összeg=18
+
+A ciklus végrehajtása itt befejeződik, mivel i értéke elérte a 4-et. Megkaptuk a sorozat elemeinek összegét. Ennek kiíratása, vagy vele valamilyen művelet végzése a ciklus után történhet.
