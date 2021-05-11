@@ -63,13 +63,16 @@ document.getElementById('paros').onclick = function() {
                 await delay(500);
                 document.getElementById('line_1').style.backgroundColor = '#292b2c';
 
-
+                document.getElementById('line_2').style.backgroundColor = 'coral';
+                await delay(500);
+                document.getElementById('line_2').style.backgroundColor = '#292b2c';
   
         for (var i = 0; i < div_shadow.length; i++) {
 
                 document.getElementById('line_2').style.backgroundColor = 'coral';
                 await delay(500);
                 document.getElementById('line_2').style.backgroundColor = '#292b2c';
+
 
                 document.getElementById('line_3').style.backgroundColor = 'coral';
                 await delay(500);
@@ -81,6 +84,8 @@ document.getElementById('paros').onclick = function() {
             //await delay(5);
             if(parseInt(document.getElementById('_id_'+i).style.height) % 2 == 0){
                 document.getElementById('_id_'+i).style.backgroundColor = 'green';
+                document.getElementById('melyik').style.backgroundColor = 'green';
+                document.getElementById('p_melyik').innerHTML = ("A(z) " + i + ". indexű elem az első előfordulás ");
 
                 document.getElementById('line_5').style.backgroundColor = 'coral';
                 await delay(500);
@@ -117,7 +122,6 @@ document.getElementById('paratlan').onclick = function() {
   
         for (var i = 0; i < div_shadow.length; i++) {
 
-
                 document.getElementById('line_2').style.backgroundColor = 'coral';
                 await delay(500);
                 document.getElementById('line_2').style.backgroundColor = '#292b2c';
@@ -132,6 +136,8 @@ document.getElementById('paratlan').onclick = function() {
             //await delay(5);
             if(parseInt(document.getElementById('_id_'+i).style.height) % 2 == 1){
                 document.getElementById('_id_'+i).style.backgroundColor = 'red';
+                document.getElementById('melyik').style.backgroundColor = 'red';
+                document.getElementById('p_melyik').innerHTML = ("A(z) " + i + ". indexű elem az első előfordulás ");
 
                 document.getElementById('line_5').style.backgroundColor = 'coral';
                 await delay(500);
@@ -151,25 +157,3 @@ document.getElementById('paratlan').onclick = function() {
 }
     printy();
 }
-/*
-document.getElementById('paratlan').onclick = function() {
-    const div_shadow = document.querySelectorAll(".div-shadow");
-    var i = 0;
-    
-   async function printy()  {
-        for (var i = 0; i < div_shadow.length; i++) {
-            document.getElementById('_id_'+i).style.backgroundColor = 'coral';
-            await delay(500);
-            document.getElementById('_id_'+i).style.backgroundColor = 'cyan';
-            //await delay(5);
-            if(parseInt(document.getElementById('_id_'+i).style.height) % 2 == 1){
-                document.getElementById('_id_'+i).style.backgroundColor = 'red';
-                break;
-            }
-            
-            //await delay(500);
-        }
-    }
-    printy();
-}
-*/

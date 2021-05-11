@@ -64,7 +64,7 @@ document.getElementById('paros').onclick = function() {
                 document.getElementById('line_1').style.backgroundColor = '#292b2c';
 
 
-  
+        var paros = 0;
         for (var i = 0; i < div_shadow.length; i++) {
 
                 document.getElementById('line_2').style.backgroundColor = 'coral';
@@ -85,8 +85,10 @@ document.getElementById('paros').onclick = function() {
                 document.getElementById('line_5').style.backgroundColor = 'coral';
                 await delay(500);
                 document.getElementById('line_5').style.backgroundColor = '#292b2c';
-
-                break;
+                paros+=1;
+                document.getElementById('mennyi').style.backgroundColor = 'green';
+                document.getElementById('p_mennyi').innerHTML = ("A tömbben " + paros + " db páros elem van.");
+    
             }
             
                 document.getElementById('line_4').style.backgroundColor = 'coral';
@@ -114,7 +116,7 @@ document.getElementById('paratlan').onclick = function() {
                 document.getElementById('line_1').style.backgroundColor = '#292b2c';
 
 
-  
+                var paratlan = 0;
         for (var i = 0; i < div_shadow.length; i++) {
 
 
@@ -137,7 +139,10 @@ document.getElementById('paratlan').onclick = function() {
                 await delay(500);
                 document.getElementById('line_5').style.backgroundColor = '#292b2c';
 
-                break;
+                paratlan+=1;
+                document.getElementById('mennyi').style.backgroundColor = 'red';
+                document.getElementById('p_mennyi').innerHTML = ("A tömbben " + paratlan + " db páratlan elem van.");
+                
             }
             
                 document.getElementById('line_4').style.backgroundColor = 'coral';
@@ -151,25 +156,3 @@ document.getElementById('paratlan').onclick = function() {
 }
     printy();
 }
-/*
-document.getElementById('paratlan').onclick = function() {
-    const div_shadow = document.querySelectorAll(".div-shadow");
-    var i = 0;
-    
-   async function printy()  {
-        for (var i = 0; i < div_shadow.length; i++) {
-            document.getElementById('_id_'+i).style.backgroundColor = 'coral';
-            await delay(500);
-            document.getElementById('_id_'+i).style.backgroundColor = 'cyan';
-            //await delay(5);
-            if(parseInt(document.getElementById('_id_'+i).style.height) % 2 == 1){
-                document.getElementById('_id_'+i).style.backgroundColor = 'red';
-                break;
-            }
-            
-            //await delay(500);
-        }
-    }
-    printy();
-}
-*/
