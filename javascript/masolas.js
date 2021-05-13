@@ -113,7 +113,7 @@ document.getElementById('pow').onclick = function() {
                     //document.getElementById.style.height = "10px";
                     document.getElementById('id_'+ i).style.height = document.getElementById('_id_'+ i).style.height;
                     document.getElementById('id_'+ i).innerHTML = height2;
-                    //document.getElementById('id_'+ i).style.width = 30 +'px';
+                    document.getElementById('id_'+ i).style.width = 35 + 'px';
                     document.getElementById('id_'+i).style.backgroundColor = 'coral';
                     await delay(500);
                     document.getElementById('id_'+i).style.backgroundColor = 'cyan';
