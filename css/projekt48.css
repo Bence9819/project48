@@ -8,14 +8,32 @@
     
     /*text-align: center;*/
 }
+#div-container2{
+    width: auto;
+    margin-top: 10px;
+    margin-left: 50px;
+    /*margin-left: 100px;*/
+    display: flex;
+    
+    /*text-align: center;*/
+}
 
 .div-shadow{
     
-    width: 30px;
+    width: 35px;
     height: 100px;
     margin: 1px 1px 1px 1px;
     border: 1px;
     background-color:cyan;
+    border-color: black;
+}
+.div-shadower{
+    
+    width: 35px;
+    
+    margin: 1px 1px 1px 1px;
+    border: 1px;
+   
     border-color: black;
 }
 
