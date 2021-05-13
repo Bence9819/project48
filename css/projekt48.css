@@ -2,7 +2,7 @@
 #div-container{
     width: auto;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: auto;
     /*margin-left: 100px;*/
     display: flex;
     
@@ -11,7 +11,7 @@
 #div-container2{
     width: auto;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: auto;
     /*margin-left: 100px;*/
     display: flex;
     
@@ -30,12 +30,11 @@
 .div-shadower{
     
     width: 35px;
-    
+    height: 100px;
     margin: 1px 1px 1px 1px;
     border: 1px;
-   
+    
     border-color: black;
-}
 
 #p_sum{
     
