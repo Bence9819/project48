@@ -35,9 +35,9 @@
     border: 1px;
     
     border-color: black;
-
+}
 #p_sum{
-    
+    text-align: center;
 }
 
 .place{
@@ -54,7 +54,7 @@
     height: 20px;
     
     margin-bottom: 60px;
-    margin-left: 50px;
+    margin-left: 25px;
     background-color: coral;
     /*position: absolute;*/
 }
