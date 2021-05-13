@@ -10,6 +10,16 @@
 }
 #div-container2{
     width: auto;
+
+    margin-top: 10px;
+    margin-left: auto;
+    /*margin-left: 100px;*/
+    display: flex;
+    
+    /*text-align: center;*/
+}
+#div-container3{
+    width: auto;
     margin-top: 10px;
     margin-left: auto;
     /*margin-left: 100px;*/
@@ -21,19 +31,28 @@
 .div-shadow{
     
     width: 35px;
-    height: 100px;
+ 
     margin: 1px 1px 1px 1px;
     border: 1px;
     background-color:cyan;
     border-color: black;
 }
-.div-shadower{
+.div-shadow2{
     
     width: 35px;
-    height: 100px;
+
     margin: 1px 1px 1px 1px;
     border: 1px;
+
+    border-color: black;
+}
+.div-shadow3{
     
+    width: 35px;
+ 
+    margin: 1px 1px 1px 1px;
+    border: 1px;
+
     border-color: black;
 }
 #p_sum{
