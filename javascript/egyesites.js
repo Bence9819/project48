@@ -170,13 +170,14 @@ document.getElementById('egyesites').onclick = function() {
             for (var j = 0; j < div_shadow.length; j++) {
                 document.getElementById('_id_'+j).style.backgroundColor = 'coral';
                 await delay(500);
-                heightA = parseInt(document.getElementById('_id_'+ j).style.height)
-                heightB = parseInt(document.getElementById('id_'+ i).style.height)
+                heightA = parseInt(document.getElementById('_id_'+ i).style.height)
+                heightB = parseInt(document.getElementById('id_'+ j).style.height)
                 if (heightB != heightA){
                     counter += 1;
                     document.getElementById('_id_'+j).style.backgroundColor = 'cyan';
                 }
-                
+                if (heightB == heightA){
+                    counter = -100;
                     document.getElementById('_id_'+j).style.backgroundColor = 'cyan';
                     
                 }
