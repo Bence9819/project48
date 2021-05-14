@@ -176,8 +176,7 @@ document.getElementById('egyesites').onclick = function() {
                     counter += 1;
                     document.getElementById('_id_'+j).style.backgroundColor = 'cyan';
                 }
-                if (heightB == heightA){
-                    counter = -100;
+                
                     document.getElementById('_id_'+j).style.backgroundColor = 'cyan';
                     
                 }
