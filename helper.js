@@ -5,9 +5,10 @@
   var arrayUnionFunction=function  (inputA,inputB) {
     var result=[];
     inputA.forEach (function  (element) {
-      if (result.indexOf (element)===-1) {
-        result.push (element);
-      }
+      // if (result.indexOf (element)===-1) {
+      //   result.push (element);
+      // }
+      result.push (element);
     });
     inputB.forEach (function  (element) {
       if (result.indexOf (element)===-1) {
